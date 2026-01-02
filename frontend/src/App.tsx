@@ -25,6 +25,9 @@ interface QualifyingOfferData {
   top_10_players: Player[]
 }
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+
+
 function App() {
   const [data, setData] = useState<QualifyingOfferData | null>(null)
   const [allPlayers, setAllPlayers] = useState<Player[]>([])
@@ -37,7 +40,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/qualifying-offer')
+      const response = await axios.get(`${API_URL}/qualifying-offer`)
       setData(response.data)
       setError('')
     } catch (err) {
@@ -48,7 +51,7 @@ function App() {
 
   const fetchAllPlayers = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/get-all-rows')
+      const response = await axios.get(`${API_URL}/get-all-rows`)
       setAllPlayers(response.data)
     } catch (err) {
       console.error('Failed to fetch all players', err)

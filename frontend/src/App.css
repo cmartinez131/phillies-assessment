@@ -21,7 +21,7 @@ h1 {
 
 .container {
   display: flex;
-  
+  gap: 1.5rem;
 }
 
 .left-column,
@@ -33,7 +33,7 @@ h1 {
 }
 
 .card {
-  background: pink;
+  background: white;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 1.5rem;
@@ -118,6 +118,9 @@ h1 {
 
 button {
   background-color: #ffffff;
+  color: #1a202c;
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: 500;
   cursor: pointer;
@@ -125,8 +128,8 @@ button {
 }
 
 button:hover {
-  border-color: darkslategrey;
-  color: darkslategrey;
+  border-color: #1a202c;
+  background-color: #f7fafc;
 }
 
 .error-container {
@@ -140,20 +143,16 @@ footer {
   padding-top: 2rem;
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
 .histogram-card { 
   display: flex;
   flex-direction: column;
-  min-height: 400px;
   flex: 1;
-  position: relative; 
 }
 
+.chart-wrapper {
+  flex: 1;
+  min-height: 0;
+}
 
 .all-salaries-header {
   display: flex;
@@ -175,19 +174,20 @@ footer {
 }
 
 .filter-buttons button {
-  padding: 0.4rem 0.8rem;
-  font-size: 0.8rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+.sort-button {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  min-width: 150px;
 }
 
 .filter-buttons button.active {
   background-color: #1a202c;
   color: white;
   border-color: #1a202c;
-}
-
-.sort-button {
-  padding: 0.4rem 0.8rem;
-  font-size: 0.8rem;
 }
 
 .all-players-scroll {
@@ -197,6 +197,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
   .controls {
     flex-direction: column;
     align-items: stretch;
@@ -206,5 +210,3 @@ footer {
     justify-content: space-between;
   }
 }
-
-

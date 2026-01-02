@@ -47,7 +47,7 @@ export default function SalaryHistogram({ players }: Props) {
   }
 
   return (
-    <div>
+    <div className="chart-wrapper">
       <Bar 
         data={data}
         options={{

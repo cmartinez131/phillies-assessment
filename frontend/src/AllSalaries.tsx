@@ -46,7 +46,7 @@ export default function AllSalaries({ players, year, formatCurrency }: Props) {
             onClick={() => setSortOrder(prev => prev === 'desc' ? 'asc' : 'desc')} 
             className="sort-button"
           >
-            Sort {sortOrder === 'desc' ? 'Descending' : 'Ascending'}
+          Sorted By: {sortOrder === 'desc' ? 'Highest First' : 'Lowest First'}
           </button>
         </div>
       </div>

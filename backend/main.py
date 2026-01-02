@@ -17,6 +17,8 @@ origins = [
     "http://localhost",
     "http://localhost:8080",
     "http://localhost:5173",  # Vite default development server
+    "https://phillies-assessment.onrender.com", # Render URL
+    "https://*.vercel.app", # Vercel deployments
 ]
 
 app.add_middleware(
