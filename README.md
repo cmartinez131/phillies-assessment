@@ -6,8 +6,8 @@
 This project calculates the MLB qualifying offer based on the top 125 highest salaries from a provided dataset.
 
 
-- **Application Link:** 
-- **GitHub Repository:** 
+- **Application Link:** https://phillies-assessment.vercel.app/
+- **GitHub Repository:** https://github.com/cmartinez131/phillies-assessment
 
 
 ## Tech Stack
