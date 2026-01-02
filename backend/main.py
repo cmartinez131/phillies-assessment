@@ -18,7 +18,8 @@ origins = [
     "http://localhost:8080",
     "http://localhost:5173",  # Vite default development server
     "https://phillies-assessment.onrender.com", # Render URL
-    "https://*.vercel.app", # Vercel deployments
+    "https://phillies-assessment.vercel.app",    # Vercel frontend
+    "https://phillies-assessment-jaqk64wau-cmartinez131s-projects.vercel.app",  # Preview deployments
 ]
 
 app.add_middleware(
@@ -28,11 +29,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# @app.get("/")
-# def root():
-#     return {"status": "healthy"}
-
 
 @app.get("/health")
 def health():
