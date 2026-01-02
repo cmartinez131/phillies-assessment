@@ -104,7 +104,7 @@ Frontend will start at: http://localhost:5173/
 
 ## Testing
 - If testing locally, go to http://localhost:5173/ while the backend is running.
-- If testing deployed app, go to URL
+- If testing deployed app, go to https://phillies-assessment.vercel.app/
 - Refresh button makes another request
 - Observe that data slightly changes with each refresh as new data is fetched on each load
 - Test filter buttons to view different salaries
